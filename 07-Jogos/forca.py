@@ -1,10 +1,15 @@
+import random
+
 def jogar():
 
     print("**************************")
     print("Bem-vindo ao Jodo de Forca")
     print("**************************")
+
+    frutas = ["pera", "uva", "goiaba", "manga","abacate","morango","banana","tomate","abacaxi","acerola","amora","cereja"]
     
-    palavra_secreta = "pera".upper()
+    palavra_secreta = random.choice(frutas).upper()
+
     letras_acertadas = ["_" for letra in palavra_secreta]
     enforcou = False
     acertou  = False
